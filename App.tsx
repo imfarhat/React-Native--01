@@ -8,7 +8,6 @@ const App = () => {
   return (
     <SafeAreaView>
       <ScrollView>
-        <Text>App</Text>
         <FlatCard />
         <ElevatedCards />
         <FancyCards />

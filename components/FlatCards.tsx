@@ -7,22 +7,13 @@ export default function FlatCard() {
       <Text style={styles.headingText}>Flat Card</Text>
       <View style={[styles.cardContainer]}>
         <View style={[styles.card, {backgroundColor: 'red'}]}>
-          <Text>Red</Text>
+          <Text style={{color: 'white', fontWeight: 'semibold'}}>Red</Text>
         </View>
         <View style={[styles.card, {backgroundColor: 'green'}]}>
-          <Text>Green</Text>
+          <Text style={{color: 'white', fontWeight: 'semibold'}}>Green</Text>
         </View>
         <View style={[styles.card, {backgroundColor: 'maroon'}]}>
-          <Text>Maroon</Text>
-        </View>
-        <View style={[styles.card, {backgroundColor: 'yellow'}]}>
-          <Text>Yellow</Text>
-        </View>
-        <View style={[styles.card, {backgroundColor: 'pink'}]}>
-          <Text>Pink</Text>
-        </View>
-        <View style={[styles.card, {backgroundColor: 'violet'}]}>
-          <Text>Violet</Text>
+          <Text style={{color: 'white', fontWeight: 'semibold'}}>Maroon</Text>
         </View>
       </View>
     </View>
@@ -34,6 +25,7 @@ const styles = StyleSheet.create({
     fontSize: 24,
     fontWeight: 'bold',
     paddingHorizontal: 8,
+    textAlign: 'center',
   },
   card: {
     height: 100,
@@ -46,7 +38,9 @@ const styles = StyleSheet.create({
   cardContainer: {
     flex: 1,
     flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
     padding: 8,
-    gap: 8
+    gap: 8,
   },
 });
