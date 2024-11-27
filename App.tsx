@@ -11,7 +11,7 @@ import {
 function App() {
   const isDarkMode = useColorScheme() === 'dark';
   return (
-    <SafeAreaView>
+    <SafeAreaView style={{flex: 1}}>
       <View style={styles.container}>
         <Text style={isDarkMode ? styles.lightText : styles.darkText}>
           Hey there!
@@ -25,7 +25,11 @@ function App() {
 }
 
 const styles = StyleSheet.create({
-  container: {flex: 1, alignItems: 'center', justifyContent: 'center'},
+  container: {
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
   darkText: {
     color: 'red',
   },
