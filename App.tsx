@@ -1,12 +1,21 @@
 import React from 'react';
 
-import {SafeAreaView, View, Text} from 'react-native';
+import {
+  SafeAreaView,
+  View,
+  Text,
+  useColorScheme,
+  StyleSheet,
+} from 'react-native';
 
 function App() {
+  const isDarkMode = useColorScheme() === 'dark';
   return (
     <SafeAreaView>
-      <View>
-        <Text>Hey there!</Text>
+      <View style={styles.container}>
+        <Text style={isDarkMode ? styles.lightText : styles.darkText}>
+          Hey there!
+        </Text>
         <Text>Hey there!</Text>
         <Text>Hey there!</Text>
         <Text>Hey there!</Text>
@@ -14,5 +23,15 @@ function App() {
     </SafeAreaView>
   );
 }
+
+const styles = StyleSheet.create({
+  container: {flex: 1, alignItems: 'center', justifyContent: 'center'},
+  darkText: {
+    color: 'red',
+  },
+  lightText: {
+    color: '#ffffff',
+  },
+});
 
 export default App;
