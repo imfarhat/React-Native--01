@@ -4,7 +4,7 @@ import React from 'react';
 export default function FlatCard() {
   return (
     <View>
-      <Text style={styles.headingText}>FlatCard</Text>
+      <Text style={styles.headingText}>Flat Card</Text>
       <View style={[styles.cardContainer]}>
         <View style={[styles.card, {backgroundColor: 'red'}]}>
           <Text>Red</Text>

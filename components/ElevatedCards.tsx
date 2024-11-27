@@ -1,28 +1,28 @@
 import {StyleSheet, Text, View, ScrollView} from 'react-native';
 import React from 'react';
 
-export default function ElevatedelevatedCards() {
+export default function ElevatedCards() {
   return (
     <View>
-      <Text style={styles.headingText}>Elevated elevatedCards</Text>
+      <Text style={styles.headingText}>Elevated Cards</Text>
       <ScrollView horizontal={true} style={styles.container}>
         <View style={[styles.elevatedCard, {backgroundColor: '#ccc'}]}>
-          <Text>Grey</Text>
+          <Text>#CCC</Text>
         </View>
         <View style={[styles.elevatedCard, {backgroundColor: 'lightgrey'}]}>
-          <Text>Grey</Text>
+          <Text>Light Grey</Text>
         </View>
         <View style={[styles.elevatedCard, {backgroundColor: '#dddaaa'}]}>
-          <Text>Grey</Text>
+          <Text>#DDDAAA</Text>
         </View>
         <View style={[styles.elevatedCard, {backgroundColor: '#abcabc'}]}>
-          <Text>Grey</Text>
+          <Text style={{textTransform: 'uppercase'}}>#abcabc</Text>
         </View>
         <View style={[styles.elevatedCard, {backgroundColor: '#bbaacc'}]}>
-          <Text>Grey</Text>
+          <Text style={{textTransform: 'uppercase'}}>#bbaacc</Text>
         </View>
         <View style={[styles.elevatedCard, {backgroundColor: '#aabbcc'}]}>
-          <Text>Grey</Text>
+          <Text style={{textTransform: 'uppercase'}}>#aabbcc</Text>
         </View>
       </ScrollView>
     </View>
