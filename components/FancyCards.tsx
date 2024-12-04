@@ -5,7 +5,7 @@ export default function FancyCards() {
   return (
     <View>
       <Text style={styles.headingText}>Fancy Cards</Text>
-      <View>
+      <View style={[styles.card, styles.cardElevated]}>
         <Image
           source={{
             uri: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-C_UAhXq9GfuGO452EEzfbKnh1viQB9EDBQ&s',
@@ -35,21 +35,50 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     paddingHorizontal: 8,
   },
-  card: {},
-  cardElevated: {},
+  card: {
+    width: 375,
+    height: 375,
+    borderRadius: 6,
+    marginVertical: 12,
+    marginHorizontal: 16,
+  },
+  cardElevated: {
+    backgroundColor: '#ffffff',
+    elevation: 3,
+    shadowOffset: {
+      width: 1,
+      height: 1,
+    },
+  },
   cardImage: {
     height: 180,
+    marginBottom: 8,
+    borderTopLeftRadius: 8,
+    borderTopRightRadius: 6,
   },
-  cardBody: {},
+  cardBody: {
+    flex: 1,
+    flexGrow: 1,
+    paddingHorizontal: 12,
+  },
   cardTitle: {
-    fontSize: 20,
+    fontSize: 22,
     fontWeight: 'bold',
+    color: 'red',
+    marginBottom: 6,
   },
   cardLabel: {
-    fontSize: 16,
+    fontSize: 14,
     color: 'grey',
+    marginBottom: 6,
   },
-  cardDescription: {},
+  cardDescription: {
+    fontSize: 12,
+    marginTop: 6,
+    marginBottom: 12,
+    flexShrink: 1,
+    color: '',
+  },
   cardFooter: {
     backgroundColor: 'green',
     padding: 4,
