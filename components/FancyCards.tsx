@@ -74,10 +74,11 @@ const styles = StyleSheet.create({
   },
   cardDescription: {
     fontSize: 12,
-    marginTop: 6,
+    marginTop: 0,
     marginBottom: 12,
     flexShrink: 1,
-    color: '',
+    color: 'maroon',
+    opacity: 0.75,
   },
   cardFooter: {
     backgroundColor: 'green',
